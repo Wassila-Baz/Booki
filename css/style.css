@@ -509,48 +509,19 @@ nav a:hover{
 /*FILTRES*/
 
 
-/*filtres*/
-.filter-list{
-    display: flex;
-    flex-direction: row;
-    justify-content:space-betwee;
-    align-items: flex-start;
-    gap: 20px;
-    align-self: stretch;
-    width: 50%;
-   
+/*POPULAIRES*/
+
+.hebergements-and-populaires {
+    flex-direction: column-reverse;
 }
 
-/*bordure autour des icones*/
-.filter-list a {
-    border:  #F2F2F2 2px solid;
-    border-radius:  25px; 
-    padding: 4px 19px;
+.populaires {
+    width: 100%;
 }
 
-/*icones*/
-.fa-solid.fa-money-bill-wave,
-.fa-sharp.fa-person,
-.fa-solid.fa-heart,
-.fa-solid.fa-fire{
-    color:#0065FC;
-    padding: 10px;
-    border-radius: 50%;
+.hebergements {
+    width: 100%;
 }
-
-/*textes des filtres*/
-#economique,
-#famille,
-#romantique,
-#pepites {
-   color: black;
-   font-weight: bold;
-   font-size: 17px; 
-
-
 
 
 }
-
-}
-  
