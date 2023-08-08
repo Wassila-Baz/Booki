@@ -348,8 +348,10 @@ input {
     display: flex;
     gap: 30px;
     justify-content: space-between;
-
+    padding-left: 30px;
+    padding-right: 30px;
 }
+
 /*cards*/
 .activités-cards .card {
     display: flex;
@@ -407,9 +409,10 @@ li{
 footer p {
     font-size: 18px;
     font-weight: bold;
+    margin: 0px;
 }
 footer a{
-    font-size: 16px;
+    font-size: 13px;
     color: black;
     
 }
@@ -459,13 +462,15 @@ footer a{
     /* Afficher la loupe uniquement sur les appareils mobiles */
 
 
- header #logo {
+#logo {
     display: flex;
-    padding: 30px;
-    padding-left: 115px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 10px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   header nav {  
@@ -507,7 +512,7 @@ nav a:hover{
 
 
 /*FILTRES*/
-
+   
 
 /*POPULAIRES*/
 
@@ -515,13 +520,143 @@ nav a:hover{
     flex-direction: column-reverse;
 }
 
+section.populaires
+{
+border-radius: 0; /*bordure section populaire à vérifier*/
+
+}
+
 .populaires {
     width: 100%;
 }
+/*HEBERGEMENTS*/
+
+.hebergements-and-populaires .hebergements{
+    background-color: transparent;
+}
 
 .hebergements {
+   width: 100%;
+
+   
+}
+/*toutes les cards*/
+.hebergements-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: transparent;
+}
+/*une cards*/
+.hebergements-cards .card{
+   width: 100%;
+   height: 207px;
+   display: flex;
+padding-bottom: 0px;
+flex-direction: column;
+gap: 4px;
+align-self: stretch;
+
+}
+
+/*images des cards*/
+.hebergements-cards img{
+   height: 124px;
+align-self: stretch; 
+object-fit: cover;
+}
+
+.hebergements .card-content{
+    display: flex;
+padding: 0px 15px;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+align-self: stretch;
+}
+
+.card-1 {
+    order: 1;
+  }
+
+  .card-2 {
+    order: 6;
+  }
+
+  .card-3 {
+    order: 3;
+  }
+
+  .card-4 {
+    order: 4;
+  }
+
+  .card-5 {
+    order: 2;
+  }
+
+  .card-6 {
+    order: 5;
+}
+
+
+/*ACTIVITÉS*/
+
+#activités {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+/*une cards*/
+.activités-cards .card{
+   width: 100%;
+   height: 207px;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   align-items: center;
+
+  margin: 0px;
+   
+}
+
+/*images des cards*/
+.activités-cards img{
     width: 100%;
+    height: 144px;
+
+  
+}
+.activités-cards .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+
+}
+
+.activités-cards .card-title {
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+
+
+/*footer*/
+.footer ul{
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
 
 }
+
