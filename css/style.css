@@ -21,7 +21,6 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
 }
 
@@ -62,18 +61,21 @@ a {
 }
 
 /*liens hébergements et activités*/
-nav  {
+nav {
     display: flex;
     align-items: center ;
     justify-content: end ;
     margin-top: -44px;
 }
+
 /*Hébergement et Activités*/
 nav a {
     padding: 35px;
     color: black;
     text-decoration: none;
+   
 }
+
 /*Survol*/
  nav a:hover {
     border-top: 2px solid #0065FC; 
@@ -100,17 +102,19 @@ nav a {
     margin-top: 35px;
     margin-bottom: 35px;
 }
+
 /*icone localisation*/
 .fa-location-dot {
     background-color:#F2F2F2;
     border-radius: 10px 0px 0px 10px;
-    padding: 18px;
+    padding: 19px;
     color: black;
 }
+
 /*icone loupe pour mobile*/
 .fa-magnifying-glass {
     display: none;
-  }
+}
   
 input {
    border:#F2F2F2 1px solid ;
@@ -118,21 +122,20 @@ input {
    font-weight: bold ; 
    text-align: center;
    font-size: 18px;
-   font-weight :700px ;   
-
+   font-weight :700;   
 }
 
-.search-button-blue{
+.search-button-blue {
     border-radius: 0px 10px 10px 0px;
     background-color: #0065FC;
     border: #0065FC 1px solid;
-    padding: 15px 16px;
+    padding: 16.5px 16px;
     font-size: 15px ;
     color: white; /*couleur du texte "Rechercher"*/
 }
 
 /*filtres*/
-.filter-list{
+.filter-list {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -152,11 +155,10 @@ input {
 .fa-solid.fa-money-bill-wave,
 .fa-sharp.fa-person,
 .fa-solid.fa-heart,
-.fa-solid.fa-fire{
+.fa-solid.fa-fire {
     color:#0065FC;
     padding: 10px;
     border-radius: 50%;
-  
 }
 
 /*textes des filtres*/
@@ -192,6 +194,7 @@ input {
     gap: 10px;
     margin-bottom: 15px;
 }
+
 /****** HEBERGEMENT ***********/
 
  /*Titre"Hébergements à Marseille*/
@@ -201,6 +204,7 @@ input {
     align-items: center;
     margin-top: 0px;
 }
+
 /*toutes les cards*/
 .hebergements-cards .card {
     width: calc(33.33% - 30px);
@@ -208,11 +212,9 @@ input {
     display: flex;
     padding-bottom: 0px;
     flex-direction: column;
-
 }
 
 .hebergements-cards {
-
  display: flex;
  justify-content: space-between;
  flex-wrap: wrap;
@@ -220,15 +222,16 @@ input {
 }
 
  /*images*/
-.hebergements-cards img{ 
+.hebergements-cards img { 
     width: 100%;
     height: 124px;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
+
 /*contenu des cards*/
-.hebergements-cards .card-content  {
+.hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -236,7 +239,7 @@ input {
     align-self: stretch;
 }
 
-.hebergements-cards .card-title{
+.hebergements-cards .card-title {
     margin-bottom: 10px;
     align-self: stretch;
     margin-top: 4px;
@@ -245,19 +248,17 @@ input {
 .hebergements-cards .card-subtitle { /*paragraphe cards*/
     align-self: stretch;
     margin: 0;
-    
 }
 
 .hebergements-cards .card-rating {
     margin-bottom: 15px; /*étoiles*/
 }
+
 .lien-afficher-plus  {
     font-size: 18px;
     color:black ;
     font-weight: bold;
-   margin-top: 30px;
-   
-    
+    margin-top: 30px; 
 }
 
 
@@ -269,7 +270,7 @@ input {
 }
 
 /*4eme étoiles grise*/
-.fa-solid.neutral-star{
+.fa-solid.neutral-star {
     color: #F2F2F2;
 }
 
@@ -301,7 +302,6 @@ input {
 .populaires-cards .card {
     display: flex;
     margin: 20px;
-
 }
 
 .populaires-cards img {
@@ -311,7 +311,7 @@ input {
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content{
+.populaires-cards .card-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -351,11 +351,11 @@ input {
     padding-left: 30px;
     padding-right: 30px;
 }
+
 .activités-cards {
 width: 100%;
-
-
 }
+
 /*cards*/
 .activités-cards .card {
     display: flex;
@@ -417,8 +417,7 @@ footer p {
 footer a{
     font-size: 16px;
     color: black;
-    font-weight:400 ;
-   
+    font-weight:400;
 }
 
 
@@ -426,7 +425,7 @@ footer a{
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (min-width: 1024px)and (max-width:1440px ) {
+@media (max-width:1024px ) {
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -461,8 +460,8 @@ footer a{
 }
 
 
-/* Styles pour les appareils mobiles (écran de 767.98 pixels ou moins) */
-@media (min-width:320px)and (max-width: 767.98px) {
+/* Styles pour les appareils mobiles (écran de 768 pixels ou moins) */
+@media  (max-width: 768px) {
   
     body {
         display: flex;
@@ -472,14 +471,9 @@ footer a{
     .main-container {
         width: 100%;
         max-width: 767.980px;
-        padding: 0 20px;
+ 
         box-sizing: border-box;
     }
-
-
-
-
-
 
 #logo {
     display: flex;
@@ -493,30 +487,44 @@ footer a{
   }
 
   header nav {  
-    padding-top: 30px;
+
     display: flex;
     align-items: center;
     justify-content: center;   
-    padding-bottom: 30px;
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border-bottom:  2px solid #882222  ; 
+    font-size: 100%;
+
 }
+
+
+
 
 nav a:hover{
     border-bottom: 2px solid; 
     border-top: none;
 }
 
-  /* Affiche la loupe uniquement sur les appareils mobiles */
-      
+
+
 .searchbar{
     width: 335px;
     height: 35px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-self: stretch;
+
+
+
     margin-top: 35px;
     margin-bottom: 35px;
 }
+
+.fa-location-dot{
+    margin-left: 20px;
+}
+
+  /* Affiche la loupe uniquement sur les appareils mobiles */
 .fa-magnifying-glass {
     display: inline-block;
     border-radius: 10px 10px 10px 10px;
@@ -525,18 +533,21 @@ nav a:hover{
     border: #0065FC 1px solid;
     padding: 17px;
     color: white;
+    position: relative;
+    left: -12px;
   }
 
 .search-button-blue {
     display: none;
 }
 
-
-.input {
+input {
     border:#F2F2F2 1px solid ;
     padding: 14px;
- }
+    padding-right: 35
+    px;
 
+}
 
 /*FILTRES*/
    
@@ -559,10 +570,10 @@ nav a:hover{
     align-items: flex-start;
   }
 
-  #economique,
-  #famille,
-  #romantique,
-  #pepites {
+#economique,
+#famille,
+#romantique,
+#pepites {
     display: flex;
     align-items: center;flex-wrap: nowrap;
     font-size:16px;
@@ -574,17 +585,28 @@ nav a:hover{
     flex-direction: column-reverse;
 }
 
-section.populaires{
+section.populaires {
 border-radius: 0; /*bordure section populaire à vérifier*/
 }
 
-.populaires{
+.populaires {
     width: 100%;
+   
+}
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 2;
+}
+.populaires-cards .card {
+    width: 100%;
+   
 }
 
 /*HEBERGEMENTS*/
 
-.hebergements-and-populaires .hebergements{
+.hebergements-and-populaires .hebergements {
     background-color: transparent;
 }
 
@@ -599,32 +621,32 @@ border-radius: 0; /*bordure section populaire à vérifier*/
     gap: 15px;
     background-color: transparent;
 }
+
 /*une cards*/
 .hebergements-cards .card{
-   width: 100%;
-   height: 207px;
-   display: flex;
+    width: 100%;
+    height: 207px;
+    display: flex;
     padding-bottom: 0px;
     flex-direction: column;
     gap: 4px;
     align-self: stretch;
-
 }
 
 /*images des cards*/
-.hebergements-cards img{
-   height: 124px;
-align-self: stretch; 
-object-fit: cover;
+.hebergements-cards img{ 
+    height: 124px;
+    align-self: stretch; 
+    object-fit: cover;
 }
 
 .hebergements .card-content{
     display: flex;
-padding: 0px 15px;
-flex-direction: column;
-align-items: flex-start;
-gap: 8px;
-align-self: stretch;
+    padding: 0px 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
 }
 /*ordre des cards d'hébergements*/
 .card-1 {
@@ -659,6 +681,7 @@ align-self: stretch;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    gap: 15px;
 }
 
 /*une cards*/
@@ -670,7 +693,6 @@ align-self: stretch;
    justify-content: flex-end;
    align-items: center;
    margin: 0px;
-   
 }
 
 /*images des cards*/
@@ -678,6 +700,7 @@ align-self: stretch;
     width: 100%;
     height: 144px;
 }
+
 .activités-cards .card-content {
     display: flex;
     flex-direction: column;
@@ -705,4 +728,3 @@ align-self: stretch;
 
 
 }
-
