@@ -41,7 +41,12 @@ body {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 15px;
+}
+
+h1,
+h2{
+    font-size: 22px;
 }
 
 .euro {
@@ -227,7 +232,6 @@ input {
     height: 124px;
     align-self: stretch;
     border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
 }
 
 /*contenu des cards*/
@@ -235,9 +239,10 @@ input {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
     align-self: stretch;
+    margin-left: 15px;
 }
+
 
 .hebergements-cards .card-title {
     margin-bottom: 10px;
@@ -252,6 +257,7 @@ input {
 
 .hebergements-cards .card-rating {
     margin-bottom: 15px; /*étoiles*/
+    margin-top: 8px;
 }
 
 .lien-afficher-plus  {
@@ -289,7 +295,7 @@ input {
 
 /****** Populaires ***********/
 .populaires {
-    width: 32%;
+    width: 50%;
 
 }
 
@@ -302,6 +308,8 @@ input {
 .populaires-cards .card {
     display: flex;
     margin: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .populaires-cards img {
@@ -378,7 +386,7 @@ width: 100%;
 /*contenu des cards*/
 .activités-cards .card-content {
     padding-bottom: 20px;
-    padding-left: 15px;
+    padding-left: 13px;
 }
 
 
@@ -466,14 +474,19 @@ footer a{
     body {
         display: flex;
         justify-content: center;
+        margin: 0px;
     }
     
     .main-container {
         width: 100%;
         max-width: 767.980px;
- 
         box-sizing: border-box;
     }
+
+    .hebergements-and-populaires section{
+        margin-bottom: -30px;
+    }
+
 
 #logo {
     display: flex;
@@ -492,30 +505,40 @@ footer a{
     align-items: center;
     justify-content: center;   
     margin: auto;
-    width: 50%;
     text-align: center;
-    border-bottom:  2px solid #882222  ; 
-    font-size: 100%;
-
+    border-bottom:  2px solid ; color: #F2F2F2;
 }
 
-
+nav a {
+    padding-left: px;
+    width: 100%;
+   
+    margin-bottom: -15px;
+}
 
 
 nav a:hover{
     border-bottom: 2px solid; 
     border-top: none;
+    width: 188px;
+    padding: 20px;
 }
 
 
+.section-content{
+    margin: 0 20px;
+}
+
+
+.information{
+    margin: 25px 20px;
+    margin-bottom: 15px;
+}
 
 .searchbar{
     width: 335px;
     height: 35px;
     display: flex;
-
-
-
     margin-top: 35px;
     margin-bottom: 35px;
 }
@@ -544,8 +567,7 @@ nav a:hover{
 input {
     border:#F2F2F2 1px solid ;
     padding: 14px;
-    padding-right: 35
-    px;
+    padding-right: 65px;
 
 }
 
@@ -556,6 +578,7 @@ input {
     display: grid;
     grid-template-columns: 180px 180px;
     align-items: start; /* Aligner les éléments en haut de leur espace */
+    margin: 0 20px
 }
 
 .filter-list h2 {
@@ -576,7 +599,7 @@ input {
 #pepites {
     display: flex;
     align-items: center;flex-wrap: nowrap;
-    font-size:16px;
+      font-size: 16px;
 }
 
 /*POPULAIRES*/
@@ -591,13 +614,13 @@ border-radius: 0; /*bordure section populaire à vérifier*/
 
 .populaires {
     width: 100%;
+    margin-top: 0;
    
 }
 .populaires-cards {
     display: flex;
     flex-direction: column;
     align-items:center;
-    gap: 2;
 }
 .populaires-cards .card {
     width: 100%;
@@ -606,12 +629,14 @@ border-radius: 0; /*bordure section populaire à vérifier*/
 
 /*HEBERGEMENTS*/
 
-.hebergements-and-populaires .hebergements {
+.hebergements-and-populaires 
+#hebergements {
     background-color: transparent;
 }
 
 .hebergements {
    width: 100%;
+
 }
 
 /*toutes les cards*/
@@ -635,7 +660,7 @@ border-radius: 0; /*bordure section populaire à vérifier*/
 
 /*images des cards*/
 .hebergements-cards img{ 
-    height: 124px;
+    height: 126px;
     align-self: stretch; 
     object-fit: cover;
 }
@@ -682,6 +707,7 @@ border-radius: 0; /*bordure section populaire à vérifier*/
     justify-content: flex-end;
     align-items: center;
     gap: 15px;
+    margin-bottom:65px;
 }
 
 /*une cards*/
@@ -698,7 +724,7 @@ border-radius: 0; /*bordure section populaire à vérifier*/
 /*images des cards*/
 .activités-cards img{
     width: 100%;
-    height: 144px;
+    height: 145px;
 }
 
 .activités-cards .card-content {
@@ -725,6 +751,8 @@ border-radius: 0; /*bordure section populaire à vérifier*/
     flex: 1 0 0;
     align-self: stretch;
 }
-
+footer{
+    margin-bottom: -30px;
+}
 
 }
