@@ -147,7 +147,7 @@ input {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 14px;
     margin-top: 35px;
     margin-bottom: 15px;
 }
@@ -352,6 +352,7 @@ input {
 .activités-title {
     height: 30px;
     margin: 30px;
+    margin-bottom: 0px;
 }
 
 #activités {
@@ -389,7 +390,7 @@ width: 100%;
 /*contenu des cards*/
 .activités-cards .card-content {
     padding-bottom: 20px;
-    padding-left: 13px;
+    padding-left: 19px;
 }
 
 
@@ -435,15 +436,16 @@ footer a{
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/* Medium devices (tablets, destkop less/equal than 1024px) */
 @media (max-width:1024px ) {
+
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements{
         width: 100%;
-       
     }
 
     .populaires {
@@ -469,19 +471,18 @@ footer a{
         font-size: 13px;
     }
 
-
-.filter-list .h2{
-    display: flex;
-    justify-content: flex-start;
-    margin-top: -40px
-
+    .activités-cards .card-content {
+        display: flex;
+        height: 20px;
+        padding: 20px 19px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+        margin-bottom: 20px;
+    }
 }
-.filter-list{
-   display: inline-block;
-   padding: 25px;
-
-}
-
 
 
 /* Styles pour les appareils mobiles (écran de 768 pixels ou moins) */
@@ -515,7 +516,7 @@ footer a{
     margin-left: auto;
   }
 
-  header nav {  
+  nav {  
 
     display: flex;
     align-items: center;
@@ -524,18 +525,19 @@ footer a{
     text-align: center;
     border-bottom:  2px solid ; color: #F2F2F2;
     margin-top: -30px;
+    
 }
 
 nav a {
-    width: 35%;
+    width: 50%;
     margin-bottom: -15px;
+    text-align: center;
 }
 
 
 nav a:hover{
     border-bottom: 2px solid; 
     border-top: none;
-    width: 188px;
     padding: 20px;
 }
 
@@ -572,7 +574,7 @@ nav a:hover{
     padding: 17px;
     color: white;
     position: relative;
-    left: -28px;
+    left: -19px;
   }
 
 .search-button-blue {
@@ -582,6 +584,8 @@ nav a:hover{
 input {
     border:#F2F2F2 1px solid ;
     padding: 14px;
+    width: 187px;
+    padding-left: 0px;
 
 }
 
@@ -755,9 +759,11 @@ border-radius: 0; /*bordure section populaire à vérifier*/
 .activités-cards .card-title {
     margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: -8px;
 }
 
 /*FOOTER*/
+
 .footer ul{
     display: flex;
     padding: 20px;
